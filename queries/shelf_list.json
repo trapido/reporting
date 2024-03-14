@@ -169,7 +169,7 @@
 		},
 		{
             "name": "call_number_filter",
-            "displayName": "Call Number starts with (e.g., enter 'NA' to search for all call numbers starting with 'NA')",
+            "displayName": "Call Number starts with (e.g., enter NA to search for all call numbers starting with NA)",
             "type": "text",
             "required": false,
 		},
