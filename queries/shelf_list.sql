@@ -2,7 +2,7 @@
 
 --Report pulls a shelf list, by location and call number
 
-DROP FUNCTION IF EXISTS app_tableau.create_shelflist;
+DROP FUNCTION IF EXISTS create_shelflist;
 
 CREATE FUNCTION create_shelflist(
     start_date_cataloged DATE DEFAULT '1900-01-01',
