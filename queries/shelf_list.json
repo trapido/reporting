@@ -37,7 +37,7 @@
             "name": "holdings_permanent_location_filter",
             "displayName": "Holdings Permanent Location",
             "type": "text",
-            "required": true
+            "required": false
         },
         {
             "name": "item_temporary_location_filter",
