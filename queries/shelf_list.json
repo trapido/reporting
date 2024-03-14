@@ -69,6 +69,7 @@
             "type": "text",
             "required": false,
             "controlled.options": [
+			    "",
 				"Archival Collection",
 				"Book",
 				"Bound-with",
@@ -92,6 +93,7 @@
             "type": "text",
             "required": false,
             "controlled.options": [
+			    "",
 				"accessories 1",
 				"accessories 2",
 				"accessories 3",
@@ -123,7 +125,8 @@
 				"sound recording",
 				"unspecified",
 				"video recording"
-            ]
+            ],
+			"default": ""
         },
 	    {
             "name": "holdings_type_filter",
@@ -131,6 +134,7 @@
             "type": "text",
             "required": false,
             "controlled.options": [
+			     "",
 				"Archival Collection",
 				"Book",
 				"Bound-with",
@@ -146,7 +150,9 @@
 				"Serial",
 				"Unknown",
 				"Visual Material"
-            ]
+            ],
+			"default": ""
+			
         },
 		{
             "name": "call_number_type_filter",
@@ -165,34 +171,14 @@
 				"Source specified in subfield $2",
 				"Superintendent of Documents classification",
 				"Title"
-            ]
+            ],
+			"default": "Library of Congress classification"
 		},
 		{
             "name": "call_number_filter",
-            "displayName": "Call Number starts with (e.g., enter NA to search for all call numbers starting with NA)",
-            "type": "boolean",
+            "displayName": "Call Number starts with (e.g., enter 'NA' to search for all call numbers starting with 'NA/)",
+            "type": "text",
             "required": false
-		},
-		{
-            "name": "inst_discovery_suppress_filter",
-            "displayName": "Instance suppressed from discovery",
-            "type": "boolean",
-            "required": false,
-			"default": false
-        },
-	    {
-            "name": "hld_discovery_suppress_filter",
-            "displayName": "Holding suppressed from discovery",
-            "type": "boolean",
-            "required": false,
-			"default": false
-        },
-	    {
-            "name": "itm_discovery_suppress_filter",
-            "displayName": "Item suppressed from discovery",
-            "type": "boolean",
-            "required": false,
-			"default": false
-        }
+		}
     ]
 }
