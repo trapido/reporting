@@ -99,7 +99,7 @@ hld_discovery_suppress_filter = COALESCE(hld.discovery_suppress, FALSE) AND
 itm_discovery_suppress_filter = COALESCE((i.jsonb->>'discoverySuppress')::boolean, FALSE) AND 
 holdings_type_filter IN (hld_type.name, '') AND 
 material_type_filter IN (mat_type.name, '') AND 
-call_number_type_filter IN (call_number_type.name, '') AND
+call_number_type_filter IN (call_num_type.name, '') AND
 hld.call_number ILIKE call_number_filter || '%'
 ORDER BY i.jsonb->>'effectiveShelvingOrder' COLLATE "C"
 $$
