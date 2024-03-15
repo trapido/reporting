@@ -8,6 +8,7 @@
             "type": "text",
             "required": true,
             "controlled.options": [
+		"",
 		"ARS",
 		"ART",
 		"BUSINESS",
@@ -33,12 +34,6 @@
 		"TANNER"
             ]
         },
-       {
-            "name": "holdings_permanent_location_filter",
-            "displayName": "Holdings Permanent Location",
-            "type": "text",
-            "required": false
-        },
         {
             "name": "item_temporary_location_filter",
             "displayName": "Temporary location filter",
@@ -62,30 +57,6 @@
             "displayName": "Latest date cataloged",
             "type": "date",
             "required": false
-        },
-        {
-            "name": "holdings_type_filter",
-            "displayName": "Holdings type filter",
-            "type": "text",
-            "required": false,
-            "controlled.options": [
-			    "",
-				"Archival Collection",
-				"Book",
-				"Bound-with",
-				"Computer File",
-				"Electronic",
-				"Equipment",
-				"Map",
-				"Monograph",
-				"Multi-part monograph",
-				"Physical",
-				"Recording",
-				"Score",
-				"Serial",
-				"Unknown",
-				"Visual Material"
-            ]
         },
 		{
             "name": "material_type_filter",
@@ -128,32 +99,6 @@
             ],
 			"default": ""
         },
-	    {
-            "name": "holdings_type_filter",
-            "displayName": "Holdings type filter",
-            "type": "text",
-            "required": false,
-            "controlled.options": [
-			     "",
-				"Archival Collection",
-				"Book",
-				"Bound-with",
-				"Computer File",
-				"Electronic",
-				"Equipment",
-				"Map",
-				"Monograph",
-				"Multi-part monograph",
-				"Physical",
-				"Recording",
-				"Score",
-				"Serial",
-				"Unknown",
-				"Visual Material"
-            ],
-			"default": ""
-			
-        },
 		{
             "name": "call_number_type_filter",
             "displayName": "Call Number type filter",
@@ -176,7 +121,7 @@
 		},
 		{
             "name": "call_number_filter",
-            "displayName": "Call Number starts with (e.g., enter 'NA' to search for all call numbers starting with 'NA/)",
+            "displayName": "Call Number starts with (e.g., enter 'NA' to search for all call numbers starting with 'NA')",
             "type": "text",
             "required": false
 		}

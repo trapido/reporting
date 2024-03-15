@@ -11,11 +11,7 @@ CREATE FUNCTION create_shelflist(
     holdings_permanent_location_filter TEXT DEFAULT '', 
     item_temporary_location_filter TEXT DEFAULT '', 
     item_effective_location_filter TEXT DEFAULT '',
-    holdings_type_filter TEXT DEFAULT '',
     material_type_filter TEXT DEFAULT '',
-    inst_discovery_suppress_filter BOOLEAN DEFAULT FALSE,
-    hld_discovery_suppress_filter BOOLEAN DEFAULT FALSE,
-    itm_discovery_suppress_filter BOOLEAN DEFAULT FALSE,
     call_number_type_filter TEXT DEFAULT '',
     call_number_filter TEXT DEFAULT '')
 RETURNS TABLE(
@@ -94,10 +90,6 @@ library_filter IN (perm_loclib.code, '') AND
 pl.name ILIKE '%'|| holdings_permanent_location_filter  ||'%' AND
 tl.name ILIKE '%'|| item_temporary_location_filter ||'%' AND
 el.name ILIKE '%'|| item_effective_location_filter ||'%' AND
-inst_discovery_suppress_filter = COALESCE(inst.discovery_suppress, FALSE) AND 
-hld_discovery_suppress_filter = COALESCE(hld.discovery_suppress, FALSE) AND 
-itm_discovery_suppress_filter = COALESCE((i.jsonb->>'discoverySuppress')::boolean, FALSE) AND 
-holdings_type_filter IN (hld_type.name, '') AND 
 material_type_filter IN (mat_type.name, '') AND 
 call_number_type_filter IN (call_num_type.name, '') AND
 hld.call_number ILIKE call_number_filter || '%'
