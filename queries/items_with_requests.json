@@ -1,0 +1,18 @@
+{
+    "displayName": "Items with Requests",
+    "instructions": "Optional: enter the earliest and latest date of the request.",
+    "parameters": [
+        {
+            "name": "earliest_request_date",
+            "displayName": "Earliest request date",
+            "type": "date",
+            "required": false
+        },
+        {
+            "name": "latest_request_date",
+            "displayName": "Latest request date",
+            "type": "date",
+            "required": false
+        }
+	]
+}

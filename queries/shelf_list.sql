@@ -95,4 +95,6 @@ call_number_type_filter IN (call_num_type.name, '') AND
 hld.call_number ILIKE call_number_filter || '%'
 ORDER BY i.jsonb->>'effectiveShelvingOrder' COLLATE "C"
 $$
-LANGUAGE SQL;
+LANGUAGE SQL
+STABLE
+PARALLEL SAFE;;
