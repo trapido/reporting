@@ -33,5 +33,6 @@ AS $$
 	WHERE rt.status ILIKE 'open%'
 	AND earliest_request_date <= request_date AND request_date < latest_request_date
 	AND lt.code IN ('SUL-TS-PROCESSING', 'SUL-TS-COLLECTIONCARE')
+	ORDER BY rt.request_date
 $$
 LANGUAGE SQL;
