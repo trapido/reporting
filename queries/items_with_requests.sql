@@ -21,7 +21,7 @@ AS $$
 	rt.item_id,
 	rt.request_type,
 	rt.request_level,
-	rt.request_date,
+	(rt.request_date)::DATE,
 	lt.code AS temp_loc,
 	usr.username
 	FROM folio_circulation.request__t AS rt
