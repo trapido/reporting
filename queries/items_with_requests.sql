@@ -1,4 +1,4 @@
---metadb:items_with_requests
+--metadb:function items_with_requests
 
 DROP FUNCTION IF EXISTS items_with_requests;
 
