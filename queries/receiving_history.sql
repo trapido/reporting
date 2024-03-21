@@ -5,8 +5,8 @@
 DROP FUNCTION IF EXISTS receiving_history;
 
 CREATE FUNCTION receiving_history(
-	earliest_date_received timestamptz DEFAULT '1000-01-01',
-    latest_date_received timestamptz DEFAULT '3000-01-01',
+	earliest_date_received date DEFAULT '1000-01-01',
+    latest_date_received date DEFAULT '3000-01-01',
     pieces_location_filter text DEFAULT '')
 RETURNS TABLE(
 	piece_id uuid,
@@ -16,7 +16,7 @@ RETURNS TABLE(
 	enumeration text,
 	receiving_status text,
 	expected_receipt_date date,
-	received_date timestamptz,
+	received_date date,
 	piece_format text,
 	"comment" text,
 	supplement text,
