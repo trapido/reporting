@@ -47,7 +47,7 @@ SELECT
 	p.chronology,
 	p.enumeration,
 	p.receiving_status,
-	p.receipt_date AS expected_receipt_date,
+	(p.receipt_date)::date AS expected_receipt_date,
 	(p.received_date)::date,
 	p.format AS piece_format,
 	p."comment",
