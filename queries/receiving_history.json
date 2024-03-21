@@ -4,13 +4,13 @@
     "instructions": "Choose the earliest and the latest date received and enter the location of receiving pieces. All parameters are optional: by default the report will return all receiving pieces.",
     "parameters": [
         {
-            "name": "earliest_date_received_filter",
+            "name": "earliest_date_received",
             "displayName": "Earliest date received",
             "type": "date",
             "required": false
         },
 		{
-            "name": "latest_date_received_filter",
+            "name": "latest_date_received",
             "displayName": "Latest date received",
             "type": "date",
             "required": false
