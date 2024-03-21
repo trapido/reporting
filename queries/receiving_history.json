@@ -1,5 +1,5 @@
 {
-    "displayName": "Count loans and renewals",
+    "displayName": "Receiving history",
     "description": "Report pulls a list of receiving pieces, by location and date received, if enetered.",
     "instructions": "Choose the earliest and the latest date received and enter the location of receiving pieces. All parameters are optional: by default the report will return all receiving pieces.",
     "parameters": [
